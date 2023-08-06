@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp"
+        android:src="@drawable/baseline_do_disturb_24"/>
+
+    <TextView
+        android:id="@+id/words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon"
+        android:layout_margin="20dp"
+        android:text="Are you sure you want to perform this action?"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/wordsII"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/words"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Please note that performing this action mean you are unpairing your Visual Book from your mobile phone."
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:layout_centerHorizontal="true"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/wordsII"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/bttnTrue"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Unpair"
+            android:background="@drawable/button_style01"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textAllCaps="true" />
+
+        <Button
+            android:id="@+id/bttnFalse"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:background="@drawable/button_style01"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>
